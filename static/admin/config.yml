@@ -7,7 +7,7 @@ public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "Site1 post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+    label: "Site1 Post" # Used in the UI, ie.: "New Post"
     folder: "content/blog/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Site2 post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+    label: "Site2 Post" # Used in the UI, ie.: "New Post"
     folder: "sites/site-1/content/blog/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
